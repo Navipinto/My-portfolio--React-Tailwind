@@ -31,15 +31,15 @@ function Nav() {
     },
   ];
   return (
-    <div className="w-full h-20 fixed flex justify-between items-center bg-black text-white">
-      <div className="md:px-5 px-3 ">
-        <h1 className="hidden md:block font-signature text-4xl m-2">
+    <div className="w-full h-20 fixed flex justify-between items-center bg-black text-white md:px-5 px-6">
+      <div>
+        <h1 className="hidden lg:block font-signature text-4xl">
           Naveen Shaun Pinto
         </h1>
-        <h1 className=" md:hidden font-signature text-4xl m-2">Naveen</h1>
+        <h1 className=" lg:hidden font-signature text-4xl mx-2">Naveen</h1>
       </div>
       <div>
-        <ul className="hidden mx-4 items-center space-x-7 md:flex">
+        <ul className="hidden items-center space-x-5 md:flex">
           {Links.map(({ id, link }) => (
             <li
               key={id}
@@ -53,7 +53,7 @@ function Nav() {
         </ul>
       </div>
       <div
-        className="mr-4 md:hidden z-30 text-gray-700 cursor-pointer"
+        className=" md:hidden z-30 text-gray-700 cursor-pointer"
         onClick={() => {
           settoggle(!toggle);
         }}

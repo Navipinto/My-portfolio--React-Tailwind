@@ -86,10 +86,10 @@ function Portfolio() {
   return (
     <div
       name="Projects"
-      className="bg-gradient-to-b from-black to bg-gray-800 w-full h-max text-white py-20 lg:px-20"
+      className="bg-gradient-to-b from-black to bg-gray-800 w-full h-max sm:h-screen text-white py-20 lg:px-20 sm:px-6 md:px-8"
     >
-      <div className="flex flex-col justify-center sm:p-6 md:p-8 lg:px-20 w-full h-max ">
-        <div className="p-6 sm:p-0 md:p-1 lg:p-0">
+      <div className="flex flex-col justify-center">
+        <div className="sm:p-0 md:px-1 lg:p-0 px-4">
           <h2 className="text-4xl font-bold border-b-4 border-t-0 border-s-0 border-e-0 inline border-gray-500 border">
             Projects
           </h2>
@@ -101,7 +101,7 @@ function Portfolio() {
             <button className='bg-gray-800 bg-opacity-20 px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(Reactprojects)}>React Projects</button>
           </div>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 px-6  sm:px-0 gap-8 py-5">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3   sm:px-0 gap-8 py-5 px-6">
           {projects.map(({ id, src ,href,href2
           }) => {
             return (

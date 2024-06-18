@@ -37,7 +37,7 @@ function Contact() {
       name="Contact"
       className="bg-gradient-to-t from-black to-gray-800 h-max w-full px-5 text-white py-14 lg:px-24"
     >
-      <div className="w-full h-full mx-auto sm:p-6 md:p-8 lg:px-16">
+      <div className="w-full h-full mx-auto sm:px-6 md:px-8 lg:px-16">
         <div className="mb-4">
           <h2 className="text-4xl font-bold border-b-4 inline border-gray-700">
             Contact

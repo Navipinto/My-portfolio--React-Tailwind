@@ -10,7 +10,7 @@ import Education from './components/Education';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Nav/>
       <Home/>
       <About/>
@@ -18,9 +18,11 @@ function App() {
       <Education/>
       <Experience/>
       <Contact/>
-      <SocialLinks/>
     </div>
   );
 }
 
 export default App;
+
+     
+      

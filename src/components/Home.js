@@ -6,10 +6,10 @@ function Home() {
   return (
     <div
       name="Home"
-      className="h-screen w-full bg-gradient-to-b from-black to-black"
+      className="h-screen w-full bg-gradient-to-b from-black to-black px-4" 
     >
-      <div className=" max-w-screen-lg flex flex-col-reverse h-screen w-full items-center justify-center text-white mx-auto p-4 md:flex-row">
-        <div className="flex flex-col h-full justify-center">
+      <div className=" max-w-screen-lg flex flex-col-reverse h-screen w-full items-center justify-center text-white md:flex-row">
+        <div className="flex flex-col justify-center">
           <p className="text-orange-400">Hey I'm Naveen &#128075;</p>
           <h2 className="text-4xl sm:text-7xl font-bold w-fit">
             I'm a Full Stack Developer
