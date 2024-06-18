@@ -62,7 +62,7 @@ function Experience() {
   return (
     <div
       name="Experience"
-      className="py-16 lg:px-20 bg-gradient-to-t from-black to-gray-800 w-screen h-max text-white"
+      className="py-20 lg:px-20 bg-gradient-to-t from-black to-gray-800 w-screen h-max text-white"
     >
       <div className="sm:px-6 md:px-8 lg:px-16 flex flex-col w-full h-full justify-center ">
         <div className="px-4">

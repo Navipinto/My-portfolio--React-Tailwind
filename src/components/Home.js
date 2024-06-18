@@ -1,6 +1,7 @@
 import React from 'react'
 import Mypic from '../assets/mypic1.png'
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-scroll';
 
 function Home() {
   return (
@@ -21,7 +22,8 @@ function Home() {
           </p>
           <div className="group text-white cursor-pointer w-fit my-4 flex flex-row gap-4">
             <button className="flex flex-row justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-600 px-4 py-2 rounded-md">
-              Portfolio
+              <Link to='Projects'>Portfolio
+              </Link>
               <span className="ms-2 group-hover:rotate-90 duration-300">
                 <FaArrowRight />
               </span>
