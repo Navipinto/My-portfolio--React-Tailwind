@@ -27,9 +27,9 @@ function Education() {
         }]
   return (
       <div name="Education" className='py-16 lg:px-20 mx-auto bg-gradient-to-t from-black to-gray-800 text-white flex flex-col w-full h-max justify-center '>
-        <h2 className='text-4xl font-bold underline lg:px-20 px-6 py-6'>Education</h2>
+        <h2 className='text-4xl font-bold underline lg:px-16 px-6 py-6'>Education</h2>
         
-          <div className='flex flex-col-reverse gap-4 lg:px-20 sm:px-6 md:px-8 px-4'>
+          <div className='flex flex-col-reverse gap-4 lg:px-16 sm:px-6 md:px-8 px-4'>
               {
                   data.map((item) => {
                       return (

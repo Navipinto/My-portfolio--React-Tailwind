@@ -86,22 +86,22 @@ function Portfolio() {
   return (
     <div
       name="Projects"
-      className="bg-gradient-to-b from-black to bg-gray-800 w-full h-max sm:h-screen text-white py-20 lg:px-20 sm:px-6 md:px-8"
+      className="bg-gradient-to-b from-black to bg-gray-800 w-screens px-4 h-max sm:h-screen text-white py-20 lg:px-20 sm:px-6 md:px-8"
     >
-      <div className="flex flex-col justify-center">
-        <div className="sm:p-0 md:px-1 lg:p-0 px-4">
+      <div className="flex flex-col justify-center lg:px-16">
+        <div>
           <h2 className="text-4xl font-bold border-b-4 border-t-0 border-s-0 border-e-0 inline border-gray-500 border">
             Projects
           </h2>
           <p className="pt-4 text-2xl">Check out some of my works</p>
-          <div className='flex flex-row space-x-3 items-center justify-between py-4'>
-            <button className='bg-gray-800 bg-opacity-20 px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(allprojects)}>All Projects</button>
-            <button className='bg-gray-800 bg-opacity-20 px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(Springprojects)}>Spring Projects</button>
-            <button className='bg-gray-800 bg-opacity-20 px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(Mernprojects)}>Mern Projects</button>
-            <button className='bg-gray-800 bg-opacity-20 px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(Reactprojects)}>React Projects</button>
+          <div className='flex flex-row sm:justify-between gap-3 py-5'>
+            <button className='bg-gray-800 bg-opacity-20 sm:px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(allprojects)}>All Projects</button>
+            <button className='bg-gray-800 bg-opacity-20 sm:px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(Springprojects)}>Spring Projects</button>
+            <button className='bg-gray-800 bg-opacity-20 sm:px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(Mernprojects)}>Mern Projects</button>
+            <button className='bg-gray-800 bg-opacity-20 sm:px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(Reactprojects)}>React Projects</button>
           </div>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3   sm:px-0 gap-8 py-5 px-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3   sm:px-0 gap-8">
           {projects.map(({ id, src ,href,href2
           }) => {
             return (

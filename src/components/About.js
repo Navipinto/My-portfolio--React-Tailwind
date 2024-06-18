@@ -8,16 +8,16 @@ function About() {
       name="About"
       className="flex flex-row justify-center items-center w-full h-screen bg-gray-800 text-white py-8 lg:px-16"
     >
-      <div className=" space-x-5 flex flex-col justify-center items-center lg:flex-row">
-        <div className=" w-2/3 sm:w-[300px] md:w-[400px] lg:w-[800px]">
+      <div className=" space-x-5 flex flex-col justify-betweens items-center lg:flex-row w-full lg:px-16">
+        <div className=" w-2/3 sm:w-[300px] md:w-[400px] lg:w-[2800px]">
           <img className="rounded-lg" src={aboutpic} alt="aboutpic" />
         </div>
-        <div className="flex flex-col justify-center  md:ps-4 md:mx-0 md:items-center lg:items-start items-center  px-3">
+        <div className="flex flex-col justify-center  md:ps-4 md:mx-0 md:items-center lg:items-start items-center w-fits ">
           <h2 className="font-Badoni text-2xl font-bold">Naveen Shaun Pinto</h2>
           <p className="text-orange-500 font-Badoni text-[17px] mt-2">
             Full Stack Developer
           </p>
-          <p className="w-fit mt-2 text-center md:w-4/5">
+          <p className="w-fit mt-2 text-center lg:text-start md:w-4/5">
             A Java Full Stack developer with strong foundation of software
             development. My expertise lies in Java programming and React js for
             both backend and frontend development, allowing me to contribute
