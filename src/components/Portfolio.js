@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import newspic from '../assets/newsappproject.png'
 import textutil from "../assets/textutilsproject.png";
-import weatherpic from "../assets/weatherreportproject.png";
-import stopwatch from "../assets/stopwatchproject.png";
 import inotebook from "../assets/inotebook.png";
 import bookstore from "../assets/bookstore.png";
 

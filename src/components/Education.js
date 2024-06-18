@@ -1,5 +1,4 @@
 import React from 'react'
-import { CiStar } from "react-icons/ci";
 
 function Education() {
     const data=[{
