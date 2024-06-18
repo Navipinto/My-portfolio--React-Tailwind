@@ -28,7 +28,7 @@ function Home() {
             </button>
             <button className="flex flex-row justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-600 px-7 py-2 rounded-md">
               <a
-                href="/NaveenShaunPintoRESUMEupdated.pdf"
+                href="/NaveenShaunPintonewResume.pdf"
                 download={true}
                 target="_blank"
                 rel="noreferrer"

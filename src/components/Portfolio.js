@@ -38,13 +38,7 @@ function Portfolio() {
       src: textutil,
       href: "https://your-textutils.netlify.app",
       href2: "https://github.com/Navipinto/MytextUtils-react"
-    },
-    {
-      id: 2,
-      src: newspic,
-      href: "https://your-textutils.netlify.app",
-      href2: "https://github.com/Navipinto/MytextUtils-react"
-    },
+    }
   ];
 
   const Mernprojects = [
@@ -73,7 +67,7 @@ function Portfolio() {
       id: 2,
       src: newspic,
       href: "https://your-textutils.netlify.app",
-      href2: "https://github.com/Navipinto/MytextUtils-react"
+      href2: "https://github.com/Navipinto/newsapp-react"
     },
     {
       id: 3,
