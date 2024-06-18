@@ -19,10 +19,14 @@ function Nav() {
     },
     {
       id: 4,
-      link: "Experience",
+      link: "Education",
     },
     {
       id: 5,
+      link: "Experience",
+    },
+    {
+      id: 6,
       link: "Contact",
     },
   ];

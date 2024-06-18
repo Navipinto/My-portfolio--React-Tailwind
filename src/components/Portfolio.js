@@ -1,32 +1,100 @@
-import React from 'react'
+import React, { useState } from 'react'
 import newspic from '../assets/newsappproject.png'
 import textutil from "../assets/textutilsproject.png";
 import weatherpic from "../assets/weatherreportproject.png";
 import stopwatch from "../assets/stopwatchproject.png";
+import inotebook from "../assets/inotebook.png";
+import bookstore from "../assets/bookstore.png";
 
 function Portfolio() {
-    const projects = [
-      {
-        id: 1,
+  const allprojects = [
+    {
+      id: 1,
         src: textutil,
+        href:"https://your-textutils.netlify.app",
+        href2:"https://github.com/Navipinto/MytextUtils-react"
       },
       {
         id: 2,
         src: newspic,
+        href: "https://your-textutils.netlify.app",
+        href2: "https://github.com/Navipinto/MytextUtils-react"
       },
-      {
-        id: 3,
-        src: weatherpic,
-      },
-      {
-        id: 4,
-        src: stopwatch,
-      },
+    {
+      id: 3,
+      src: inotebook,
+      href: "https://inotebook-note-saver-for-you.netlify.app",
+      href2: "https://github.com/Navipinto/inotebook-React"
+    },
+    {
+      id: 4,
+      src: bookstore,
+      href: "https://mybookstore-foryou.netlify.app",
+      href2: "https://github.com/Navipinto/Bookstore-Reactproject"
+    },
     ];
+    
+  const Springprojects = [
+    {
+      id: 1,
+      src: textutil,
+      href: "https://your-textutils.netlify.app",
+      href2: "https://github.com/Navipinto/MytextUtils-react"
+    },
+    {
+      id: 2,
+      src: newspic,
+      href: "https://your-textutils.netlify.app",
+      href2: "https://github.com/Navipinto/MytextUtils-react"
+    },
+  ];
+
+  const Mernprojects = [
+    {
+      id: 1,
+      src: inotebook,
+      href: "https://inotebook-note-saver-for-you.netlify.app",
+      href2: "https://github.com/Navipinto/inotebook-React"
+    },
+    {
+      id: 2,
+      src: bookstore,
+      href: "https://mybookstore-foryou.netlify.app",
+      href2: "https://github.com/Navipinto/Bookstore-Reactproject"
+    },
+  ];
+
+  const Reactprojects = [
+    {
+      id: 1,
+      src: textutil,
+      href: "https://your-textutils.netlify.app",
+      href2: "https://github.com/Navipinto/MytextUtils-react"
+    },
+    {
+      id: 2,
+      src: newspic,
+      href: "https://your-textutils.netlify.app",
+      href2: "https://github.com/Navipinto/MytextUtils-react"
+    },
+    {
+      id: 3,
+      src: inotebook,
+      href: "https://inotebook-note-saver-for-you.netlify.app",
+      href2: "https://github.com/Navipinto/inotebook-React"
+    },
+    {
+      id: 4,
+      src: bookstore,
+      href: "https://mybookstore-foryou.netlify.app",
+      href2: "https://github.com/Navipinto/Bookstore-Reactproject"
+    },
+  ];
+  const [projects, setprojects] = useState(allprojects)
   return (
     <div
       name="Projects"
-      className="bg-gradient-to-b from-black to bg-gray-800 w-full h-max text-white py-6 lg:py-6 lg:px-20"
+      className="bg-gradient-to-b from-black to bg-gray-800 w-full h-max text-white py-20 lg:px-20"
     >
       <div className="flex flex-col justify-center sm:p-6 md:p-8 lg:px-20 w-full h-max ">
         <div className="p-6 sm:p-0 md:p-1 lg:p-0">
@@ -34,9 +102,16 @@ function Portfolio() {
             Projects
           </h2>
           <p className="pt-4 text-2xl">Check out some of my works</p>
+          <div className='flex flex-row space-x-3 items-center justify-between py-4'>
+            <button className='bg-gray-800 bg-opacity-20 px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(allprojects)}>All Projects</button>
+            <button className='bg-gray-800 bg-opacity-20 px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(Springprojects)}>Spring Projects</button>
+            <button className='bg-gray-800 bg-opacity-20 px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(Mernprojects)}>Mern Projects</button>
+            <button className='bg-gray-800 bg-opacity-20 px-5 py-2 font-semibold rounded-md' onClick={()=>setprojects(Reactprojects)}>React Projects</button>
+          </div>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 px-6  sm:px-0 gap-8 py-5">
-          {projects.map(({ id, src }) => {
+          {projects.map(({ id, src ,href,href2
+          }) => {
             return (
               <div
                 key={id}
@@ -50,12 +125,12 @@ function Portfolio() {
                   />
                 </div>
                 <div className="flex flex-row py-4 justify-around items-start">
-                  <button className="py-2 px-4 rounded-md hover:bg-gradient-to-r from-cyan-600 to-blue-500">
+                  <a className="py-2 px-4 rounded-md hover:bg-gradient-to-r from-cyan-600 to-blue-500" href={href}>
                     Demo
-                  </button>
-                  <button className="py-2 px-4 rounded-md hover:bg-gradient-to-r from-cyan-600 to-blue-500">
+                  </a>
+                  <a className="py-2 px-4 rounded-md hover:bg-gradient-to-r from-cyan-600 to-blue-500" href={href2}>
                     Code
-                  </button>
+                  </a>
                 </div>
               </div>
             );
