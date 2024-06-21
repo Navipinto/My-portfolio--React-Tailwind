@@ -86,7 +86,7 @@ function Portfolio() {
   return (
     <div
       name="Projects"
-      className="bg-gradient-to-b from-black to bg-gray-800 w-screens px-4 h-max sm:h-screen text-white py-20 lg:px-20 sm:px-6 md:px-8"
+      className="bg-gradient-to-b from-black to bg-gray-800 w-full px-4 h-max xl:h-[780px] sm:h-screen text-white py-20 lg:px-20 sm:px-6 md:px-8"
     >
       <div className="flex flex-col justify-center lg:px-16">
         <div>

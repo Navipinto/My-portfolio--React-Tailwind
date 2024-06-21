@@ -7,6 +7,11 @@ import Bootstrap from "../assets/Bootstrap.png";
 import Java from "../assets/Java.png";
 import Reactjs from "../assets/React.png";
 import Tailwindcss from "../assets/Tailwindcss.png";
+import Springboot from "../assets/springboot.png";
+import Nodejs from "../assets/nodejs.png";
+import Expressjs from "../assets/expressjs.png";
+import Mongodb from "../assets/mongodb.png";
+import mysql from "../assets/mysql (1).png";
 
 function Experience() {
     const experience = [
@@ -42,18 +47,48 @@ function Experience() {
       },
       {
         id: 6,
+        src: Springboot,
+        title: "Spring Boot",
+        style: "shadow-green-700",
+      },
+      {
+        id: 7,
+        src: Nodejs,
+        title: "Node.js",
+        style: "shadow-green-700",
+      },
+      {
+        id: 8,
+        src: Expressjs,
+        title: "Express.js",
+        style: "shadow-gray-400",
+      },
+      {
+        id: 9,
+        src: Mongodb,
+        title: "MongoDB",
+        style: "shadow-green-700",
+      },
+      {
+        id: 10,
+        src: mysql,
+        title: "MySQL",
+        style: "shadow-blue-700",
+      },
+      {
+        id: 11,
         src: Tailwindcss,
         title: "Tailwind Css",
         style: "shadow-cyan-700",
       },
       {
-        id: 7,
+        id: 12,
         src: Bootstrap,
         title: "Bootstrap",
         style: "shadow-purple-700",
       },
       {
-        id: 8,
+        id: 13,
         src: Github,
         title: "Github",
         style: "shadow-gray-500",
@@ -62,7 +97,7 @@ function Experience() {
   return (
     <div
       name="Experience"
-      className="py-20 lg:px-20 bg-gradient-to-t from-black to-gray-800 w-screen h-max text-white"
+      className="py-20 lg:px-20 bg-gradient-to-t from-black to-gray-800 w-full h-max text-white"
     >
       <div className="sm:px-6 md:px-8 lg:px-16 flex flex-col w-full h-full justify-center ">
         <div className="px-4">

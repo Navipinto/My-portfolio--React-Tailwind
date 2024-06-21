@@ -31,7 +31,7 @@ function Nav() {
     },
   ];
   return (
-    <div className="w-full h-20 fixed flex justify-between items-center bg-black text-white md:px-5 px-6">
+    <div className="w-full h-20 fixed flex justify-between items-center bg-black text-white md:px-5 px-6 z-30">
       <div>
         <h1 className="hidden lg:block font-signature text-4xl">
           Naveen Shaun Pinto
