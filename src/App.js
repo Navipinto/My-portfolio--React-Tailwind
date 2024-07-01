@@ -13,7 +13,6 @@ function App() {
     <div>
       <Nav/>
       <Home/>
-      <About/>
       <About />
       <Portfolio />
       <Education/>
